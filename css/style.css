@@ -1,0 +1,59 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+header {
+	height: 10vh;
+    background-color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .title {
+    position: relative;
+	display: inline-block;
+	font-size: 36px;
+	margin-right: 50px;
+    color: #4d96ce;
+    text-decoration: none;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+    text-align: center;
+	font-size: 28px;
+	margin-right: 50px;
+    color: #bce6f9;
+    text-decoration: none;
+}
+nav a .en {
+    font-size: 16px;
+    text-decoration: none;
+}
+.topnav a span:first-child {
+	z-index: 2;
+	display: block;
+}
+.topnav a span:last-child {
+	z-index: 1;
+	display: block;
+	color: #bce6f9;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+	transform: translateY(-100%);
+	text-align: center;
+}
+.topnav a:hover span:last-child,
+.topnav a:focus span:last-child {
+	opacity: 1;
+	transform: translateY(0%);
+}
+.map {
+	width: 100%;
+	height: 90vh;
+}
+#viewDiv {
+	height: 100%;
+	width: 100%;
+}
